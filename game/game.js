@@ -1,1 +1,1 @@
-// placeholder for your JS game code
+// Flappy game JS goes here
