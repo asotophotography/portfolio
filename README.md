@@ -1,1 +1,1 @@
-# Full Portfolio Site for asotophotography
+# Portfolio Website for asotophotography
