@@ -131,3 +131,93 @@ footer {
   text-align: center;
   opacity: 0.7;
 }
+
+
+.centered-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.centered-buttons {
+  justify-content: center;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  color: var(--text);
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: var(--bg);
+  min-width: 160px;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  z-index: 1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 12px rgba(0,0,0,0.3);
+}
+
+.dropdown-content a {
+  color: var(--text);
+  padding: 0.75rem 1rem;
+  text-decoration: none;
+  display: block;
+  background: var(--glass);
+  transition: background 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: rgba(108, 0, 255, 0.1);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+footer {
+  padding: 2rem 1rem;
+  text-align: center;
+  opacity: 0.5;
+  font-size: 0.9rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.stat-box {
+  background: var(--glass);
+  backdrop-filter: var(--blur);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255,255,255,0.1);
+  width: 260px;
+  transition: transform 0.3s ease;
+  margin: 1rem auto;
+  box-shadow: 0 0 15px rgba(128, 0, 255, 0.05);
+}
+
+.stat-box:hover {
+  transform: translateY(-5px);
+}
