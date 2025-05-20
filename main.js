@@ -17,3 +17,8 @@ document.addEventListener("DOMContentLoaded", () => {
     lucide.createIcons();
   });
 });
+
+document.getElementById("menuToggle").addEventListener("click", () => {
+  const menu = document.getElementById("dropdownMenu");
+  menu.classList.toggle("dropdown-hidden");
+});
