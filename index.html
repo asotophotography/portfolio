@@ -1,1 +1,94 @@
-<!-- polished homepage with featured photo slideshow and nav fixes -->
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>asotophotography</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <header class="nav glass">
+    <h1 class="site-title">asotophotography</h1>
+    <nav>
+      <a href="index.html"><i data-lucide="home"></i> Home</a>
+      <a href="projects.html"><i data-lucide="folder"></i> Projects</a>
+      <div class="dropdown">
+        <button class="dropbtn"><i data-lucide="menu"></i> Categories</button>
+        <div class="dropdown-content">
+          <a href="portraits/index.html">Portraits</a>
+          <a href="nature/index.html">Nature</a>
+          <a href="urban/index.html">Urban</a>
+          <a href="experimental/index.html">Experimental</a>
+        </div>
+      </div>
+      <button id="themeToggle"><i data-lucide="moon"></i></button>
+    </nav>
+  </header>
+
+  <div class="background-waves" aria-hidden="true">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z"
+            style="fill:rgba(128,90,213,0.05);"></path>
+    </svg>
+  </div>
+
+  <section class="slideshow">
+    <img class="slide active" src="https://via.placeholder.com/800x300?text=Featured+1" alt="Slide 1" />
+    <img class="slide" src="https://via.placeholder.com/800x300?text=Featured+2" alt="Slide 2" />
+    <img class="slide" src="https://via.placeholder.com/800x300?text=Featured+3" alt="Slide 3" />
+  </section>
+
+  <main class="hero centered-content">
+    <section class="categories">
+      <h2 class="gradient-text">Explore Categories</h2>
+      <div class="category-links centered-buttons">
+        <a href="portraits/index.html">Portraits</a>
+        <a href="nature/index.html">Nature</a>
+        <a href="urban/index.html">Urban</a>
+        <a href="experimental/index.html">Experimental</a>
+      </div>
+    </section>
+
+    <section class="highlight-reel">
+      <h2 class="gradient-text">Highlights</h2>
+      <div class="reel">
+        <img src="https://via.placeholder.com/300x200?text=Photo+1" alt="Highlight 1">
+        <img src="https://via.placeholder.com/300x200?text=Photo+2" alt="Highlight 2">
+        <img src="https://via.placeholder.com/300x200?text=Photo+3" alt="Highlight 3">
+      </div>
+    </section>
+
+    <section class="intro">
+      <h2 class="gradient-text">Hi, I'm Adrian Soto</h2>
+      <p class="subtitle">Capturing emotion, light, and silence — one frame at a time.</p>
+    </section>
+
+    <section class="quote">
+      <blockquote>“Look and think before opening the shutter. The heart and mind are the true lens of the camera.”</blockquote>
+      <cite>– Yousuf Karsh</cite>
+    </section>
+
+    <section class="stats">
+      <div class="stat-box">
+        <i data-lucide="camera"></i>
+        <h3>📷 1 Year of Photography</h3>
+        <p>Exploring light, people, and stories.</p>
+      </div>
+      <div class="stat-box">
+        <i data-lucide="gallery-horizontal-end"></i>
+        <h3>🖼️ 100+ Photos Taken</h3>
+        <p>Portraits, landscapes, experiments and more.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 asotophotography</p>
+  </footer>
+
+  <script>lucide.createIcons();</script>
+</body>
+</html>
