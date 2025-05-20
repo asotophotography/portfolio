@@ -1,1 +1,1 @@
-# Portfolio Website for asotophotography
+# Final polished version of asotophotography site
