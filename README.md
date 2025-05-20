@@ -1,2 +1,2 @@
-# portfolio
-Photography Portfolio 2024-2025 
+# asotophotography portfolio site
+See all structured pages and details inside.
