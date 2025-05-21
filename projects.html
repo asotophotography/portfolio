@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="dark">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects - asotophotography</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest" defer></script>
+  <link rel="stylesheet" href="style.css">
   <script defer src="main.js"></script>
 </head>
 <body>
-  <header class="nav glass">
-    <h1 class="site-title">asotophotography</h1>
-    <nav>
-      <a href="index.html"><i data-lucide="home"></i> Home</a>
-      <a href="gallery.html"><i data-lucide="gallery-horizontal-end"></i> Gallery</a>
-      <a href="projects.html"><i data-lucide="folder"></i> Projects</a>
-      <a href="about.html"><i data-lucide="user"></i> About</a>
-      <a href="contact.html"><i data-lucide="mail"></i> Contact</a>
-      <a href="favorites.html"><i data-lucide="star"></i> Favorites</a>
-      <a href="game/index.html"><i data-lucide="gamepad-2"></i></a>
-      <button id="themeToggle"><i data-lucide="moon"></i></button>
+  <header class="nav">
+    <div class="nav-left">
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      <a href="index.html" class="site-title">asotophotography</a>
+    </div>
+    <nav class="nav-right">
+      <a href="about.html">About Me</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="projects.html">Projects</a>
+      <a href="favorites.html">Favorites</a>
     </nav>
+    <div id="dropdownMenu" class="dropdown-hidden">
+      <a href="#">Portraits</a>
+      <a href="#">Nature</a>
+      <a href="#">Urban</a>
+      <a href="#">Experimental</a>
+      <button id="themeToggle">Toggle Theme</button>
+    </div>
   </header>
-
   <main class="centered-content">
-    <h2 class="gradient-text">Projects</h2>
-    <div class="page-body"><p>Each project section includes 3+ photos with titles and short writeups about the concept, process, and what I learned.</p></div>
+    
+      <h1 class="gradient-text">Projects</h1>
+      <div class="project-row"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><p>Project 1 description here...</p></div>
+      <div class="project-row"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><p>Project 2 description here...</p></div>
+    
   </main>
-
-  <footer><p>&copy; 2025 asotophotography</p></footer>
-  <script>lucide.createIcons();</script>
+  <div id="imageViewer">
+    <div class="viewer-overlay">
+      <img id="viewerImg" src="" alt="">
+      <p id="viewerCaption"></p>
+      <span id="viewerClose">&times;</span>
+    </div>
+  </div>
+  <script src="main.js" defer></script>
 </body>
 </html>

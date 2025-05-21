@@ -3,62 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Favorites - asotophotography</title>
+  <title>Favorite Works - asotophotography</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-  <script src="https://unpkg.com/lucide@latest" defer></script>
   <script defer src="main.js"></script>
 </head>
 <body>
-  <div class="animated-bg"></div>
-  <header class="nav glass">
+  <header class="nav">
     <div class="nav-left">
-      <button id="menuToggle" aria-label="Toggle menu"><i data-lucide="menu"></i></button>
-      <div id="dropdownMenu" class="dropdown-hidden">
-        <a href="portraits.html">Portraits</a>
-        <a href="nature.html">Nature</a>
-        <a href="urban.html">Urban</a>
-        <a href="experimental.html">Experimental</a>
-        <button id="themeToggle">Toggle Theme</button>
-      </div>
-      <span class="site-title">asotophotography</span>
+      <button id="menuToggle" aria-label="Toggle menu">☰</button>
+      <a href="index.html" class="site-title">asotophotography</a>
     </div>
     <nav class="nav-right">
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
+      <a href="about.html">About Me</a>
       <a href="gallery.html">Gallery</a>
+      <a href="projects.html">Projects</a>
+      <a href="favorites.html">Favorites</a>
     </nav>
-  </header>
-
-  <main class="centered-content">
-    <h1 class="gradient-text">Favorite Works</h1>
-    <p>These are five of my favorite photos this year, each with a short reflection.</p>
-
-    <div class="favorite-gallery">
-      <div class="fav-item">
-        <img src="https://via.placeholder.com/400x250?text=Favorite+1" alt="Favorite 1">
-        <p><strong>“Late Light”</strong><br>This photo was taken at sunset, using warm shadows and the rule of thirds. I love how the natural tones and lighting shape the mood.</p>
-      </div>
-      <div class="fav-item">
-        <img src="https://via.placeholder.com/400x250?text=Favorite+2" alt="Favorite 2">
-        <p><strong>“Stillness”</strong><br>A minimalist portrait with natural lighting. It took multiple attempts to get the subject relaxed. I used subtle editing to enhance texture.</p>
-      </div>
-      <div class="fav-item">
-        <img src="https://via.placeholder.com/400x250?text=Favorite+3" alt="Favorite 3">
-        <p><strong>“Urban Frame”</strong><br>Shot downtown with strong geometry. I used framing to isolate the subject, and contrast between natural light and hard shadows.</p>
-      </div>
-      <div class="fav-item">
-        <img src="https://via.placeholder.com/400x250?text=Favorite+4" alt="Favorite 4">
-        <p><strong>“Reflections”</strong><br>One of my experiments with water surfaces and reflections. I tried to emphasize symmetry and abstract shapes.</p>
-      </div>
-      <div class="fav-item">
-        <img src="https://via.placeholder.com/400x250?text=Favorite+5" alt="Favorite 5">
-        <p><strong>“Motion Blur”</strong><br>This was a nighttime handheld shot with longer shutter speed. I embraced the blur as a creative tool to show movement.</p>
-      </div>
+    <div id="dropdownMenu" class="dropdown-hidden">
+      <a href="#">Portraits</a>
+      <a href="#">Nature</a>
+      <a href="#">Urban</a>
+      <a href="#">Experimental</a>
+      <button id="themeToggle">Toggle Theme</button>
     </div>
+  </header>
+  <main class="centered-content">
+    
+      <h1 class="gradient-text">Favorite Works</h1>
+      <p>These are my top 5 photos with personal meaning.</p>
+      <img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400">
+    
   </main>
-
-  <footer><p>&copy; 2025 asotophotography</p></footer>
-  <script>lucide.createIcons();</script>
+  <div id="imageViewer">
+    <div class="viewer-overlay">
+      <img id="viewerImg" src="" alt="">
+      <p id="viewerCaption"></p>
+      <span id="viewerClose">&times;</span>
+    </div>
+  </div>
+  <script src="main.js" defer></script>
 </body>
 </html>
