@@ -1,35 +1,51 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+
+<html data-theme="dark" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery - asotophotography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest" defer></script>
-  <script defer src="main.js"></script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Gallery - asotophotography</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="main.js"></script>
 </head>
 <body>
-  <header class="nav glass">
-    <h1 class="site-title">asotophotography</h1>
-    <nav>
-      <a href="index.html"><i data-lucide="home"></i> Home</a>
-      <a href="gallery.html"><i data-lucide="gallery-horizontal-end"></i> Gallery</a>
-      <a href="projects.html"><i data-lucide="folder"></i> Projects</a>
-      <a href="about.html"><i data-lucide="user"></i> About</a>
-      <a href="contact.html"><i data-lucide="mail"></i> Contact</a>
-      <a href="favorites.html"><i data-lucide="star"></i> Favorites</a>
-      <a href="game/index.html"><i data-lucide="gamepad-2"></i></a>
-      <button id="themeToggle"><i data-lucide="moon"></i></button>
-    </nav>
-  </header>
-
-  <main class="centered-content">
-    <h2 class="gradient-text">Gallery</h2>
-    <div class="page-body"><p>Organized collection of all my photographs, grouped by category.</p></div>
-  </main>
-
-  <footer><p>&copy; 2025 asotophotography</p></footer>
-  <script>lucide.createIcons();</script>
+<header class="nav glass">
+<h1>asotophotography</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="gallery.html">Gallery</a>
+<a href="about.html">About</a>
+<button id="themeToggle">Toggle Theme</button>
+</nav>
+</header>
+<main class="gallery-main">
+<section class="gallery-section" id="portraits">
+<h2 class="gradient-text">Portraits</h2>
+<div class="photo-grid"><!-- TODO: Add images for this category here -->
+<!-- Add portrait images here -->
+</div>
+</section>
+<section class="gallery-section" id="nature">
+<h2 class="gradient-text">Nature</h2>
+<div class="photo-grid"><!-- TODO: Add images for this category here -->
+<!-- Add nature images here -->
+</div>
+</section>
+<section class="gallery-section" id="urban">
+<h2 class="gradient-text">Urban</h2>
+<div class="photo-grid"><!-- TODO: Add images for this category here -->
+<!-- Add urban images here -->
+</div>
+</section>
+<section class="gallery-section" id="experimental">
+<h2 class="gradient-text">Experimental</h2>
+<div class="photo-grid"><!-- TODO: Add images for this category here -->
+<!-- Add experimental images here -->
+</div>
+</section>
+</main>
+<footer>
+<p>© 2025 asotophotography</p>
+</footer>
 </body>
 </html>

@@ -1,67 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+
+<html data-theme="dark" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>asotophotography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/lucide@latest" defer></script>
-  <script defer src="main.js"></script>
-</head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>asotophotography</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="main.js"></script>
+<script defer="True" src="https://unpkg.com/lucide@latest"></script></head>
 <body>
-  <header class="nav glass">
-    <div class="menu-wrapper">
-      <button id="menuToggle"><i data-lucide="menu"></i></button>
-      <div id="dropdownMenu" class="dropdown-hidden">
-        <a href="portraits/index.html">Portraits</a>
-        <a href="nature/index.html">Nature</a>
-        <a href="urban/index.html">Urban</a>
-        <a href="experimental/index.html">Experimental</a>
-      </div>
-    </div>
-    <h1 class="site-title">asotophotography</h1>
-    <nav>
-      <a href="index.html"><i data-lucide="home"></i></a>
-      <a href="projects.html"><i data-lucide="folder"></i></a>
-      <a href="https://github.com/asotophotography/portfolio" title="GitHub Source" target="_blank"><i data-lucide="github"></i></a>
-      <button id="themeToggle"><i data-lucide="moon"></i></button>
-    </nav>
-  </header>
-
-  <div class="animated-bg"></div>
-
-  <main class="centered-content">
-    <section class="category-links">
-      <h2 class="gradient-text">Explore Categories</h2>
-      <a href="portraits/index.html">Portraits</a>
-      <a href="nature/index.html">Nature</a>
-      <a href="urban/index.html">Urban</a>
-      <a href="experimental/index.html">Experimental</a>
-    </section>
-
-    <section class="intro">
-      <h2 class="gradient-text">Hi, I'm Adrian Soto</h2>
-      <p>Capturing emotion, light, and silence — one frame at a time. Welcome to my high school photography portfolio.</p>
-      <blockquote>“Look and think before opening the shutter. The heart and mind are the true lens of the camera.”</blockquote>
-      <cite>– Yousuf Karsh</cite>
-    </section>
-
-    <section class="stats-boxes">
-      <div class="stat-box">
-        <i data-lucide="camera"></i>
-        <h3>📷 1 Year of Photography</h3>
-        <p>Exploring light, people, and stories.</p>
-      </div>
-      <div class="stat-box">
-        <i data-lucide="gallery-horizontal-end"></i>
-        <h3>🖼️ 100+ Photos Taken</h3>
-        <p>Portraits, landscapes, experiments and more.</p>
-      </div>
-    </section>
-  </main>
-
-  <footer><p>&copy; 2025 asotophotography</p></footer>
-  <script>lucide.createIcons();</script>
-</body>
+<div aria-hidden="true" class="background-waves">
+<svg preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" style="fill:rgba(128,90,213,0.05);"></path>
+</svg>
+</div>
+<header class="nav glass">
+<h1>asotophotography</h1>
+<nav>
+<a href="index.html"><i data-lucide="home"></i>Home</a>
+<a href="gallery.html"><i data-lucide="image"></i>Gallery</a>
+<a href="about.html"><i data-lucide="user"></i>About</a>
+<button id="themeToggle"> Theme</button>
+</nav>
+</header>
+<main class="hero">
+<section class="highlight-reel">
+<div class="reel"><!-- TODO: Add highlight images below -->
+<img alt="Highlight 1" src="img1.jpg"/>
+<img alt="Highlight 2" src="img2.jpg"/>
+<img alt="Highlight 3" src="img3.jpg"/>
+</div>
+</section>
+<section class="categories">
+<h2>Categories</h2>
+<div class="category-links">
+<a href="gallery.html#portraits">Portraits</a>
+<a href="gallery.html#nature">Nature</a>
+<a href="gallery.html#urban">Urban</a>
+<a href="gallery.html#experimental">Experimental</a>
+</div>
+</section><section class="intro">
+<h2 class="gradient-text">Hi, I'm Adrian Soto</h2>
+<p class="subtitle">Capturing emotion, light, and silence — one frame at a time. Welcome to my high school photography portfolio.</p>
+</section>
+<section class="quote">
+<blockquote>“Look and think before opening the shutter. The heart and mind are the true lens of the camera.”</blockquote>
+<cite>– Yousuf Karsh</cite>
+</section>
+<section class="stats">
+<div class="stat-box"><i data-lucide="camera"></i>
+<h3>📷 1 Year of Photography</h3>
+<p>Exploring light, people, and stories.</p>
+</div>
+<div class="stat-box"><i data-lucide="gallery-horizontal-end"></i>
+<h3>🖼️ 100+ Photos Taken</h3>
+<p>Across portraits, nature, and experimental.</p>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2025 asotophotography</p>
+</footer>
+<script>lucide.createIcons();</script></body>
 </html>

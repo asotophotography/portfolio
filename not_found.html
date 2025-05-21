@@ -1,1 +1,53 @@
-<h1>404 Not Found</h1><p>Go back to <a href='index.html'>home</a>.</p>
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 Not Found - asotophotography</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+  <style>
+    .not-found {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    .not-found h1 {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .not-found p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+      opacity: 0.8;
+    }
+
+    .not-found a {
+      padding: 0.75rem 1.5rem;
+      background: var(--glass);
+      border-radius: 8px;
+      text-decoration: none;
+      color: var(--text);
+      backdrop-filter: var(--blur);
+      border: 1px solid var(--text);
+      transition: background 0.3s ease;
+    }
+
+    .not-found a:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="not-found">
+    <h1>404</h1>
+    <p>Oops! Looks like you wandered off the path...</p>
+    <a href="index.html">Take me back home</a>
+  </div>
+</body>
+</html>
