@@ -15,5 +15,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   let navigator = document.querySelector("header.nav");
-  navigator.style.width = window.innerWidth() - 20;
+  navigator.style.width = `${window.innerWidth - 20}px`;
 });
