@@ -12,7 +12,6 @@
 }
 body {
   margin: 0;
-  padding: 16px;
   
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
@@ -58,6 +57,7 @@ header.nav {
   color: var(--text);
   margin-left: 1rem;
   text-decoration: none;
+  padding: 0.1rem;
 }
 main {
   max-width: 900px;
