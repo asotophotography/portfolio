@@ -1,42 +1,30 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - asotophotography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
-</head>
-<body>
-  <header class="nav">
-    <div class="nav-left">
-      <button id="menuToggle" aria-label="Toggle menu">☰</button>
-      <a href="index.html" class="site-title">asotophotography</a>
-    </div>
-    <nav class="nav-right">
-      <a href="about.html">About Me</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="projects.html">Projects</a>
-      <a href="favorites.html">Favorites</a>
-      <button id="themeToggle">Theme</button>
-    </nav>
-  </header>
-  <main class="centered-content">
-    
-      <h1 class='gradient-text'>About Me</h1>
-      <p>This site showcases my year-long high school photography journey. I explore emotion, light, and storytelling through every frame.</p>
-      <h2 class='gradient-text'>Contact</h2>
-      <p>Email: your.email@school.org<br>Instagram: @asotophotography</p>
-    
-  </main>
-  <div id="imageViewer">
-    <div class="viewer-overlay">
-      <img id="viewerImg" src="" alt="">
-      <p id="viewerCaption"></p>
-      <span id="viewerClose">&times;</span>
-    </div>
+<!DOCTYPE html><html data-theme="dark"><head><meta charset="UTF-8"><title>About Me</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="nav">
+  <div class="nav-left">
+    <a href="index.html" class="site-title">asotophotography</a>
   </div>
-  <script src="main.js" defer></script>
-</body>
-</html>
+  <nav class="nav-right">
+    <a href="about.html">About Me</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="projects.html">Individual Projects</a>
+    <a href="favorites.html">Favorite Works</a>
+    <button id="themeToggle">🌓</button>
+  </nav>
+</header>
+
+<main><h1>About Me</h1>
+<p>Hi! I'm Adrian Soto. This portfolio showcases my photography journey during my high school year. I explore emotion, composition, and storytelling through my lens.</p>
+<h2>Contact</h2>
+<p>Email: your.email@school.org<br>Instagram: @asotophotography</p></main>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.add("fade-in");
+  document.getElementById("themeToggle")?.addEventListener("click", () => {
+    const html = document.documentElement;
+    const current = html.getAttribute("data-theme");
+    html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+  });
+});
+</script>
+</body></html>

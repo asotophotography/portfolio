@@ -1,41 +1,30 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projects - asotophotography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
-</head>
-<body>
-  <header class="nav">
-    <div class="nav-left">
-      <button id="menuToggle" aria-label="Toggle menu">☰</button>
-      <a href="index.html" class="site-title">asotophotography</a>
-    </div>
-    <nav class="nav-right">
-      <a href="about.html">About Me</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="projects.html">Projects</a>
-      <a href="favorites.html">Favorites</a>
-      <button id="themeToggle">Theme</button>
-    </nav>
-  </header>
-  <main class="centered-content">
-    
-      <h1 class='gradient-text'>Projects</h1>
-      <div class="project-row"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><p>Project 1 description here...</p></div>
-      <div class="project-row"><img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Photo" width="400"><p>Project 2 description here...</p></div>
-    
-  </main>
-  <div id="imageViewer">
-    <div class="viewer-overlay">
-      <img id="viewerImg" src="" alt="">
-      <p id="viewerCaption"></p>
-      <span id="viewerClose">&times;</span>
-    </div>
+<!DOCTYPE html><html data-theme="dark"><head><meta charset="UTF-8"><title>Projects</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<header class="nav">
+  <div class="nav-left">
+    <a href="index.html" class="site-title">asotophotography</a>
   </div>
-  <script src="main.js" defer></script>
-</body>
-</html>
+  <nav class="nav-right">
+    <a href="about.html">About Me</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="projects.html">Individual Projects</a>
+    <a href="favorites.html">Favorite Works</a>
+    <button id="themeToggle">🌓</button>
+  </nav>
+</header>
+
+<main><h1>Individual Projects</h1>
+<p>Each project includes my inspiration, techniques, and the outcome I aimed for.</p>
+<div><img src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg"><p>Project write-up</p></div>
+</main>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  document.documentElement.classList.add("fade-in");
+  document.getElementById("themeToggle")?.addEventListener("click", () => {
+    const html = document.documentElement;
+    const current = html.getAttribute("data-theme");
+    html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+  });
+});
+</script>
+</body></html>
