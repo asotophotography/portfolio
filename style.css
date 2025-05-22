@@ -193,3 +193,33 @@ body, header.nav, .card, .mission-box {
 #themeToggle:active {
   transform: scale(0.95);
 }
+
+
+/* ✨ Navbar Button Hover Animations */
+.nav-right a {
+  position: relative;
+  display: inline-block;
+  color: var(--text);
+  margin-left: 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-right a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--accent);
+  transition: width 0.3s ease;
+}
+
+.nav-right a:hover {
+  color: var(--accent);
+}
+
+.nav-right a:hover::after {
+  width: 100%;
+}
