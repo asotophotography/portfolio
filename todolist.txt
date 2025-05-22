@@ -3,3 +3,4 @@ circulating animated visual slideshow of 5 images on the top of the homepage
 404 page at 404.html
 add info on about_me
 restructure gallery & projects & favorites
+fix navbar colors light mode
