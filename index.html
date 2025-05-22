@@ -1,42 +1,65 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - asotophotography</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script defer src="main.js"></script>
-</head>
-<body>
-  <header class="nav">
-    <div class="nav-left">
-      <button id="menuToggle" aria-label="Toggle menu">☰</button>
-      <a href="index.html" class="site-title">asotophotography</a>
-    </div>
-    <nav class="nav-right">
-      <a href="about.html">About Me</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="projects.html">Projects</a>
-      <a href="favorites.html">Favorites</a>
-      <button id="themeToggle">Theme</button>
-    </nav>
-  </header>
-  <main class="centered-content">
-    
-  <div class="animated-bg"></div>
-  <h1 class="gradient-text">Welcome to my Portfolio</h1>
-  <p>Click any image to view it fullscreen with details. Use the menu to explore.</p>
-  <img data-view src="https://ralfvanveen.com/wp-content/uploads/2021/06/Placeholder-_-Glossary.svg" alt="Sample Work" width="400">
 
-  </main>
-  <div id="imageViewer">
-    <div class="viewer-overlay">
-      <img id="viewerImg" src="" alt="">
-      <p id="viewerCaption"></p>
-      <span id="viewerClose">&times;</span>
-    </div>
-  </div>
-  <script src="main.js" defer></script>
-</body>
+<html data-theme="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>asotophotography</title>
+<link href="style.css" rel="stylesheet"/>
+<script defer="" src="main.js"></script>
+<script defer="True" src="https://unpkg.com/lucide@latest"></script></head>
+<body>
+<div aria-hidden="true" class="background-waves">
+<svg preserveaspectratio="none" viewbox="0 0 1200 120">
+<path d="M0,60 C300,120 900,0 1200,60 L1200,120 L0,120 Z" style="fill:rgba(128,90,213,0.05);"></path>
+</svg>
+</div>
+<header class="nav glass">
+<h1>asotophotography</h1>
+<nav>
+<a href="index.html"><i data-lucide="home"></i>Home</a>
+<a href="gallery.html"><i data-lucide="image"></i>Gallery</a>
+<a href="about.html"><i data-lucide="user"></i>About</a>
+<button id="themeToggle"> Theme</button>
+</nav>
+</header>
+<main class="hero">
+<section class="highlight-reel">
+<div class="reel"><!-- TODO: Add highlight images below -->
+<img alt="Highlight 1" src="img1.jpg"/>
+<img alt="Highlight 2" src="img2.jpg"/>
+<img alt="Highlight 3" src="img3.jpg"/>
+</div>
+</section>
+<section class="categories">
+<h2>Categories</h2>
+<div class="category-links">
+<a href="gallery.html#portraits">Portraits</a>
+<a href="gallery.html#nature">Nature</a>
+<a href="gallery.html#urban">Urban</a>
+<a href="gallery.html#experimental">Experimental</a>
+</div>
+</section><section class="intro">
+<h2 class="gradient-text">Hi, I'm Adrian Soto</h2>
+<p class="subtitle">Capturing emotion, light, and silence — one frame at a time. Welcome to my high school photography portfolio.</p>
+</section>
+<section class="quote">
+<blockquote>“Look and think before opening the shutter. The heart and mind are the true lens of the camera.”</blockquote>
+<cite>– Yousuf Karsh</cite>
+</section>
+<section class="stats">
+<div class="stat-box"><i data-lucide="camera"></i>
+<h3>📷 1 Year of Photography</h3>
+<p>Exploring light, people, and stories.</p>
+</div>
+<div class="stat-box"><i data-lucide="gallery-horizontal-end"></i>
+<h3>🖼️ 100+ Photos Taken</h3>
+<p>Across portraits, nature, and experimental.</p>
+</div>
+</section>
+</main>
+<footer>
+<p>© 2025 asotophotography</p>
+</footer>
+<script>lucide.createIcons();</script></body>
 </html>
