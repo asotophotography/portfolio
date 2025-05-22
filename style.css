@@ -143,11 +143,10 @@ body.fade-in {
 }
 
 
-/* 🌸 Refined Purple-Based Light Theme */
 [data-theme="light"] {
-  --bg: #f3e8ff;         /* soft lavender */
-  --text: #1f102d;       /* deep violet-black */
-  --accent: #8b5cf6;     /* elegant purple accent */
+  --bg: #f3e8ff;         
+  --text: #1f102d;      
+  --accent: #8b5cf6;     
 }
 [data-theme="light"] body {
   background-color: var(--bg);
