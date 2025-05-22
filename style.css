@@ -57,7 +57,9 @@ header.nav {
   color: var(--text);
   margin-left: 1rem;
   text-decoration: none;
-  padding: 0.1rem;
+}
+.nav right button {
+  padding: 16px;
 }
 main {
   max-width: 900px;
