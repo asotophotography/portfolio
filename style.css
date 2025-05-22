@@ -170,7 +170,6 @@ body.fade-in {
 }
 
 
-/* ✨ Global Theme Transitions */
 :root, [data-theme="light"], [data-theme="dark"] {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
@@ -179,7 +178,6 @@ body, header.nav, .card, .mission-box {
   transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
 }
 
-/* 🟣 Animated Theme Toggle Button */
 #themeToggle {
   background-color: var(--accent);
   color: white;
