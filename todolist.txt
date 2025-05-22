@@ -1,0 +1,6 @@
+image viewer
+nav bar hover animations
+theme toggle animations
+floating nav bar that stays in the same position no matter the scrolling or page scroll area stays on top
+circulating animated visual slideshow of 5 images on the top of the homepage
+404 page at 404.html
