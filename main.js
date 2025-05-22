@@ -4,12 +4,6 @@ document.getElementById("menuToggle")?.addEventListener("click", () => {
   if (menu) menu.classList.toggle("dropdown-hidden");
 });
 
-document.getElementById("themeToggle")?.addEventListener("click", () => {
-  const html = document.documentElement;
-  const current = html.getAttribute("data-theme");
-  html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
-});
-
 document.addEventListener("DOMContentLoaded", () => {
   const viewer = document.createElement("div");
   viewer.id = "imageViewer";
@@ -37,3 +31,15 @@ document.addEventListener("DOMContentLoaded", () => {
   closeBtn.onclick = () => viewer.style.display = "none";
   viewer.onclick = e => { if (e.target === viewer) viewer.style.display = "none"; };
 });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const toggle = document.getElementById("themeToggle");
+        if (toggle) {
+          toggle.addEventListener("click", () => {
+            const html = document.documentElement;
+            const current = html.getAttribute("data-theme");
+            html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+          });
+        }
+      });
+    
