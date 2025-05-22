@@ -12,6 +12,7 @@
 }
 body {
   margin: 0;
+  padding: 16px;
   
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
