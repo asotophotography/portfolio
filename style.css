@@ -104,6 +104,12 @@ body.fade-in {
   margin-top: 2rem;
 }
 
+.github_src {
+  width: 10px;
+  height: 10px;
+  position: fixed;
+}
+
 .card {
   background: rgba(255,255,255,0.04);
   padding: 1.5rem;
