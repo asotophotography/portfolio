@@ -1,7 +1,13 @@
+
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("fade-in");
+
   const toggle = document.getElementById("themeToggle");
-  toggle.addEventListener("click", () => {
-    const html = document.documentElement;
-    html.dataset.theme = html.dataset.theme === "dark" ? "light" : "dark";
-  });
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      const html = document.documentElement;
+      const current = html.getAttribute("data-theme");
+      html.setAttribute("data-theme", current === "dark" ? "light" : "dark");
+    });
+  }
 });
