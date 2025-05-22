@@ -13,7 +13,4 @@ document.addEventListener("DOMContentLoaded", () => {
       localStorage.setItem("theme", next);
     });
   }
-
-  let navigator = document.querySelector("header.nav");
-  navigator.style.width = `${window.innerWidth - 30}px`;
 });
