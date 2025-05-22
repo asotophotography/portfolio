@@ -168,3 +168,30 @@ body.fade-in {
   color: var(--text);
   border-left: 4px solid var(--accent);
 }
+
+
+/* ✨ Global Theme Transitions */
+:root, [data-theme="light"], [data-theme="dark"] {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+body, header.nav, .card, .mission-box {
+  transition: background-color 0.4s ease, color 0.4s ease, border-color 0.4s ease;
+}
+
+/* 🟣 Animated Theme Toggle Button */
+#themeToggle {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+#themeToggle:hover {
+  background-color: #7c3aed;
+}
+#themeToggle:active {
+  transform: scale(0.95);
+}
