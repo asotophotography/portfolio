@@ -280,6 +280,10 @@ body {
 
 /* 🔍 Lightbox Image Viewer Styles */
 .modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   display: none;
   position: fixed;
   z-index: 2000;
@@ -293,6 +297,10 @@ body {
   backdrop-filter: blur(3px);
 }
 .modal-content {
+  max-height: 90vh;
+  max-width: 95vw;
+  margin: auto;
+  display: block;
   margin: auto;
   display: block;
   max-width: 90%;
@@ -318,4 +326,14 @@ body {
   color: #ccc;
   padding: 1rem;
   font-size: 1rem;
+}
+
+
+/* 🔎 Zoom-in animation */
+@keyframes zoomIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+.modal-content {
+  animation: zoomIn 0.4s ease;
 }

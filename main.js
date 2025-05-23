@@ -33,3 +33,14 @@ document.querySelectorAll("img").forEach(img => {
     };
   });
 });
+
+
+// 🔍 Add ESC key to close modal
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    const modal = document.getElementById("imageModal");
+    if (modal && modal.style.display === "block") {
+      modal.style.display = "none";
+    }
+  }
+});
