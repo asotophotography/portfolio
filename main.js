@@ -14,3 +14,22 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+
+// 🔍 Image Viewer Logic
+document.querySelectorAll("img").forEach(img => {
+  img.style.cursor = "pointer";
+  img.addEventListener("click", () => {
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImage");
+    const captionText = document.getElementById("modalCaption");
+
+    modal.style.display = "block";
+    modalImg.src = img.src;
+    captionText.textContent = img.alt || "";
+
+    document.getElementById("closeModal").onclick = () => {
+      modal.style.display = "none";
+    };
+  });
+});
