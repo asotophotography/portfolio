@@ -363,3 +363,33 @@ body {
   flex: 1;
   color: var(--text);
 }
+
+
+/* 🎯 Projects Page Layout */
+.project-block {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.project-block img.project-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.project-text {
+  flex: 1;
+  color: var(--text);
+}
