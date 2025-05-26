@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-// 🔍 Image Viewer Logic
 document.querySelectorAll("img").forEach(img => {
   img.style.cursor = "pointer";
   img.addEventListener("click", () => {
@@ -35,7 +34,6 @@ document.querySelectorAll("img").forEach(img => {
 });
 
 
-// 🔍 Add ESC key to close modal
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
     const modal = document.getElementById("imageModal");
