@@ -393,3 +393,28 @@ body {
   flex: 1;
   color: var(--text);
 }
+
+
+/* 🖼️ About Me Enhancements */
+.about-section {
+  margin-top: 3rem;
+}
+.about-content {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.04);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+}
+.self-portrait {
+  width: 250px;
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+.artist-statement {
+  flex: 1;
+  color: var(--text);
+}
