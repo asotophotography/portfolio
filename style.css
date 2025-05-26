@@ -1,4 +1,94 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #0d0d0d;
+  --text: #ffffff;
+  --accent: #9333ea;
+}
+[data-theme="light"] {
+  --bg: #f3e8ff;
+  --text: #1f102d;
+  --accent: #8b5cf6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+header.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(30, 30, 30, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-title {
+  color: var(--text);
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.nav-right a {
+  color: var(--text);
+  margin-left: 1rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-right a:hover {
+  color: var(--accent);
+}
+
+main {
+  padding: 6rem 2rem 3rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: var(--accent);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Theme toggle button */
+#themeToggle {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+#themeToggle:hover {
+  background-color: #7c3aed;
+}
+
+/* Project blocks */
 .project-block {
   display: flex;
   justify-content: space-between;
