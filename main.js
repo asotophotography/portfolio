@@ -11,20 +11,28 @@ window.addEventListener("DOMContentLoaded", () => {
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme) document.body.setAttribute("data-theme", savedTheme);
   document.body.classList.add("fade-in");
-});
 
-// Image Viewer Modal
-document.querySelectorAll('img').forEach(img => {
-  img.addEventListener('click', () => {
-    const modal = document.getElementById('imageModal');
-    const modalImg = document.getElementById('modalImage');
-    const caption = document.getElementById('modalCaption');
-    modal.style.display = 'flex';
-    modalImg.src = img.src;
-    caption.innerText = img.alt || " ";
+  // Image viewer modal setup
+  const modal = document.getElementById('imageModal');
+  const modalImg = document.getElementById('modalImage');
+  const caption = document.getElementById('modalCaption');
+  const closeBtn = document.getElementById('closeModal');
+
+  document.querySelectorAll('img').forEach(img => {
+    img.addEventListener('click', () => {
+      modal.style.display = 'flex';
+      modalImg.src = img.src;
+      caption.innerText = img.alt || " ";
+    });
   });
-});
 
-document.getElementById('closeModal').addEventListener('click', () => {
-  document.getElementById('imageModal').style.display = 'none';
+  closeBtn.addEventListener('click', () => {
+    modal.style.display = 'none';
+  });
+
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      modal.style.display = 'none';
+    }
+  });
 });
