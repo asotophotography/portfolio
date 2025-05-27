@@ -25,7 +25,6 @@ document.querySelectorAll('img').forEach(img => {
   });
 });
 
-
-document.getElementById('closeModal').onclick = () => {
+document.getElementById('closeModal').addEventListener('click', () => {
   document.getElementById('imageModal').style.display = 'none';
-};
+});
