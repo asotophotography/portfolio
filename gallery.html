@@ -1,63 +1,95 @@
 <!DOCTYPE html>
-<html data-theme="dark"><head><meta charset="utf-8"/><title>Gallery</title>
-<link href="images/favicon.ico" rel="icon" type="image/x-icon"/>
-<link href="style.css" rel="stylesheet"/></head><body>
-<header class="nav">
-<div class="nav-container">
-<div class="nav-left">
-<a class="site-title" href="index.html">asotophotography</a>
-</div>
-<nav class="nav-right">
-<a href="about.html">About Me</a>
-<a href="gallery.html">Gallery</a>
-<a href="projects.html">Individual Projects</a>
-<a href="inspirations.html">Inspirations</a>
-<a href="favorites.html">Favorite Works  </a>
-<button id="themeToggle">🌓</button>
-</nav>
-</div>
-</header>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery | Asoto Photography</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="icon" href="images/favicon.ico" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-container">
+      <a href="index.html" class="site-title">asotophotography</a>
+      <nav class="nav-right">
+        <a href="about.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="projects.html">Individual Projects</a>
+        <a href="favorites.html">Favorites</a>
+        <a href="inspirations.html">Inspirations</a>
+        <button id="themeToggle">Toggle Theme</button>
+      </nav>
+    </div>
+  </header>
 
-<main>
-<div class="page-title"><h1>Gallery</h1></div>
-<div class="gallery-grid">
-<div class="gallery-item">
-<h3>Title 1</h3>
-<img alt="Caption for Title 1 - Date" src="images/pictures/placeholder1.jpg"/>
-</div>
-<div class="gallery-item">
-<h3>Title 2</h3>
-<img alt="Caption for Title 2 - Date" src="images/pictures/placeholder2.jpg"/>
-</div>
-<div class="gallery-item">
-<h3>Title 3</h3>
-<img alt="Caption for Title 3 - Date" src="images/pictures/placeholder3.jpg"/>
-</div>
-<div class="gallery-item">
-<h3>Title 4</h3>
-<img alt="Caption for Title 4 - Date" src="images/pictures/placeholder4.jpg"/>
-</div>
-<div class="gallery-item">
-<h3>Title 5</h3>
-<img alt="Caption for Title 5 - Date" src="images/pictures/placeholder5.jpg"/>
-</div>
-<div class="gallery-item">
-<h3>Title 6</h3>
-<img alt="Caption for Title 6 - Date" src="images/pictures/placeholder6.jpg"/>
-</div>
-</div>
-</main>
-<div class="modal" id="imageModal">
-<span class="close">×</span>
-<img class="modal-content" id="modalImage"/>
-<div id="caption"></div>
-</div>
+  <main>
+    <h1>Gallery</h1>
+    <div class="gallery-grid">
+      <!-- DOWNTOWN -->
+      <!-- 1.jpg to 8.jpg -->
+      <!-- You can copy-paste and adjust layout per section if you like a break -->
+      <h2>Downtown</h2>
+      ${[...Array(8).keys()].map(i => `
+        <div class="gallery-item">
+          <h3>Downtown Shot ${i+1}</h3>
+          <img src="images/pictures/downtown/${i+1}.jpg" alt="Downtown Photo ${i+1} - Placeholder description. Date: TBD" />
+        </div>
+      `).join('')}
 
-<script src="main.js"></script>
-<!-- 🔍 Image Viewer Modal -->
-<div class="modal" id="imageModal">
-<span class="closeBtn" id="closeModal">×</span>
-<img class="modal-content" id="modalImage"/>
-<div id="modalCaption"></div>
-</div>
-</body></html>
+      <!-- LANDSCAPE -->
+      <h2>Landscape</h2>
+      ${[...Array(24).keys()].map(i => `
+        <div class="gallery-item">
+          <h3>Landscape View ${i+1}</h3>
+          <img src="images/pictures/landscape/${i+1}.jpg" alt="Landscape Scene ${i+1} - Placeholder description. Date: TBD" />
+        </div>
+      `).join('')}
+
+      <!-- MACRO -->
+      <h2>Macro</h2>
+      ${[...Array(17).keys()].map(i => `
+        <div class="gallery-item">
+          <h3>Macro Detail ${i+1}</h3>
+          <img src="images/pictures/macro/${i+1}.jpg" alt="Macro Shot ${i+1} - Placeholder description. Date: TBD" />
+        </div>
+      `).join('')}
+
+      <!-- NIGHT TIME -->
+      <h2>Night Time</h2>
+      ${[...Array(4).keys()].map(i => `
+        <div class="gallery-item">
+          <h3>Night Scene ${i+1}</h3>
+          <img src="images/pictures/night_time/${i+1}.jpg" alt="Night Photo ${i+1} - Placeholder description. Date: TBD" />
+        </div>
+      `).join('')}
+
+      <!-- OFF CAMPUS -->
+      <h2>Off Campus</h2>
+      ${[...Array(18).keys()].map(i => `
+        <div class="gallery-item">
+          <h3>Off Campus ${i+1}</h3>
+          <img src="images/pictures/off_campus/${i+1}.jpg" alt="Off Campus Shot ${i+1} - Placeholder description. Date: TBD" />
+        </div>
+      `).join('')}
+
+      <!-- PORTRAITS -->
+      <h2>Portraits</h2>
+      ${[...Array(16).keys()].map(i => `
+        <div class="gallery-item">
+          <h3>Portrait ${i+1}</h3>
+          <img src="images/pictures/portraits/${i+1}.jpg" alt="Portrait ${i+1} - Placeholder description. Date: TBD" />
+        </div>
+      `).join('')}
+    </div>
+  </main>
+
+  <!-- Modal Viewer -->
+  <div id="imageModal" class="modal">
+    <span class="closeBtn close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+    <div id="caption"></div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
