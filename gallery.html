@@ -1,95 +1,490 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Gallery | Asoto Photography</title>
-  <link rel="stylesheet" href="css/style.css"/>
-  <link rel="icon" href="images/favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
 </head>
-<body>
-  <header class="nav">
-    <div class="nav-container">
-      <a href="index.html" class="site-title">asotophotography</a>
-      <nav class="nav-right">
-        <a href="about.html">About Me</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="projects.html">Individual Projects</a>
-        <a href="favorites.html">Favorites</a>
-        <a href="inspirations.html">Inspirations</a>
-        <button id="themeToggle">Toggle Theme</button>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <h1>Gallery</h1>
-    <div class="gallery-grid">
-      <!-- DOWNTOWN -->
-      <!-- 1.jpg to 8.jpg -->
-      <!-- You can copy-paste and adjust layout per section if you like a break -->
-      <h2>Downtown</h2>
-      ${[...Array(8).keys()].map(i => `
-        <div class="gallery-item">
-          <h3>Downtown Shot ${i+1}</h3>
-          <img src="images/pictures/downtown/${i+1}.jpg" alt="Downtown Photo ${i+1} - Placeholder description. Date: TBD" />
+<body data-theme="dark" class="fade-in">
+    <header class="nav">
+        <div class="nav-container">
+            <div class="nav-left">
+                <a href="index.html" class="site-title">asotophotography</a>
+            </div>
+            <nav class="nav-right">
+                <a href="about.html">About Me</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="projects.html">Individual Projects</a>
+                <a href="favorites.html">Favorites</a>
+                <a href="inspirations.html">Inspirations</a>
+                <button id="themeToggle">🟣</button>
+            </nav>
         </div>
-      `).join('')}
+    </header>
+    <main>
+        <h1>Gallery</h1>
+<h2>Downtown</h2>
+<div class="gallery-grid">
 
-      <!-- LANDSCAPE -->
-      <h2>Landscape</h2>
-      ${[...Array(24).keys()].map(i => `
         <div class="gallery-item">
-          <h3>Landscape View ${i+1}</h3>
-          <img src="images/pictures/landscape/${i+1}.jpg" alt="Landscape Scene ${i+1} - Placeholder description. Date: TBD" />
+            <h3>Downtown 1</h3>
+            <img src="images/pictures/downtown/1.jpg" alt="Downtown image 1 - Description TBD. Date: TBD." />
         </div>
-      `).join('')}
-
-      <!-- MACRO -->
-      <h2>Macro</h2>
-      ${[...Array(17).keys()].map(i => `
+        
         <div class="gallery-item">
-          <h3>Macro Detail ${i+1}</h3>
-          <img src="images/pictures/macro/${i+1}.jpg" alt="Macro Shot ${i+1} - Placeholder description. Date: TBD" />
+            <h3>Downtown 2</h3>
+            <img src="images/pictures/downtown/2.jpg" alt="Downtown image 2 - Description TBD. Date: TBD." />
         </div>
-      `).join('')}
-
-      <!-- NIGHT TIME -->
-      <h2>Night Time</h2>
-      ${[...Array(4).keys()].map(i => `
+        
         <div class="gallery-item">
-          <h3>Night Scene ${i+1}</h3>
-          <img src="images/pictures/night_time/${i+1}.jpg" alt="Night Photo ${i+1} - Placeholder description. Date: TBD" />
+            <h3>Downtown 3</h3>
+            <img src="images/pictures/downtown/3.jpg" alt="Downtown image 3 - Description TBD. Date: TBD." />
         </div>
-      `).join('')}
-
-      <!-- OFF CAMPUS -->
-      <h2>Off Campus</h2>
-      ${[...Array(18).keys()].map(i => `
+        
         <div class="gallery-item">
-          <h3>Off Campus ${i+1}</h3>
-          <img src="images/pictures/off_campus/${i+1}.jpg" alt="Off Campus Shot ${i+1} - Placeholder description. Date: TBD" />
+            <h3>Downtown 4</h3>
+            <img src="images/pictures/downtown/4.jpg" alt="Downtown image 4 - Description TBD. Date: TBD." />
         </div>
-      `).join('')}
-
-      <!-- PORTRAITS -->
-      <h2>Portraits</h2>
-      ${[...Array(16).keys()].map(i => `
+        
         <div class="gallery-item">
-          <h3>Portrait ${i+1}</h3>
-          <img src="images/pictures/portraits/${i+1}.jpg" alt="Portrait ${i+1} - Placeholder description. Date: TBD" />
+            <h3>Downtown 5</h3>
+            <img src="images/pictures/downtown/5.jpg" alt="Downtown image 5 - Description TBD. Date: TBD." />
         </div>
-      `).join('')}
-    </div>
-  </main>
+        
+        <div class="gallery-item">
+            <h3>Downtown 6</h3>
+            <img src="images/pictures/downtown/6.jpg" alt="Downtown image 6 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Downtown 7</h3>
+            <img src="images/pictures/downtown/7.jpg" alt="Downtown image 7 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Downtown 8</h3>
+            <img src="images/pictures/downtown/8.jpg" alt="Downtown image 8 - Description TBD. Date: TBD." />
+        </div>
+        </div>
+<h2>Landscape</h2>
+<div class="gallery-grid">
 
-  <!-- Modal Viewer -->
-  <div id="imageModal" class="modal">
-    <span class="closeBtn close">&times;</span>
-    <img class="modal-content" id="modalImage" />
+        <div class="gallery-item">
+            <h3>Landscape 1</h3>
+            <img src="images/pictures/landscape/1.jpg" alt="Landscape image 1 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 2</h3>
+            <img src="images/pictures/landscape/2.jpg" alt="Landscape image 2 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 3</h3>
+            <img src="images/pictures/landscape/3.jpg" alt="Landscape image 3 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 4</h3>
+            <img src="images/pictures/landscape/4.jpg" alt="Landscape image 4 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 5</h3>
+            <img src="images/pictures/landscape/5.jpg" alt="Landscape image 5 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 6</h3>
+            <img src="images/pictures/landscape/6.jpg" alt="Landscape image 6 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 7</h3>
+            <img src="images/pictures/landscape/7.jpg" alt="Landscape image 7 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 8</h3>
+            <img src="images/pictures/landscape/8.jpg" alt="Landscape image 8 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 9</h3>
+            <img src="images/pictures/landscape/9.jpg" alt="Landscape image 9 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 10</h3>
+            <img src="images/pictures/landscape/10.jpg" alt="Landscape image 10 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 11</h3>
+            <img src="images/pictures/landscape/11.jpg" alt="Landscape image 11 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 12</h3>
+            <img src="images/pictures/landscape/12.jpg" alt="Landscape image 12 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 13</h3>
+            <img src="images/pictures/landscape/13.jpg" alt="Landscape image 13 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 14</h3>
+            <img src="images/pictures/landscape/14.jpg" alt="Landscape image 14 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 15</h3>
+            <img src="images/pictures/landscape/15.jpg" alt="Landscape image 15 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 16</h3>
+            <img src="images/pictures/landscape/16.jpg" alt="Landscape image 16 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 17</h3>
+            <img src="images/pictures/landscape/17.jpg" alt="Landscape image 17 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 18</h3>
+            <img src="images/pictures/landscape/18.jpg" alt="Landscape image 18 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 19</h3>
+            <img src="images/pictures/landscape/19.jpg" alt="Landscape image 19 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 20</h3>
+            <img src="images/pictures/landscape/20.jpg" alt="Landscape image 20 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 21</h3>
+            <img src="images/pictures/landscape/21.jpg" alt="Landscape image 21 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 22</h3>
+            <img src="images/pictures/landscape/22.jpg" alt="Landscape image 22 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 23</h3>
+            <img src="images/pictures/landscape/23.jpg" alt="Landscape image 23 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Landscape 24</h3>
+            <img src="images/pictures/landscape/24.jpg" alt="Landscape image 24 - Description TBD. Date: TBD." />
+        </div>
+        </div>
+<h2>Macro</h2>
+<div class="gallery-grid">
+
+        <div class="gallery-item">
+            <h3>Macro 1</h3>
+            <img src="images/pictures/macro/1.jpg" alt="Macro image 1 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 2</h3>
+            <img src="images/pictures/macro/2.jpg" alt="Macro image 2 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 3</h3>
+            <img src="images/pictures/macro/3.jpg" alt="Macro image 3 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 4</h3>
+            <img src="images/pictures/macro/4.jpg" alt="Macro image 4 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 5</h3>
+            <img src="images/pictures/macro/5.jpg" alt="Macro image 5 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 6</h3>
+            <img src="images/pictures/macro/6.jpg" alt="Macro image 6 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 7</h3>
+            <img src="images/pictures/macro/7.jpg" alt="Macro image 7 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 8</h3>
+            <img src="images/pictures/macro/8.jpg" alt="Macro image 8 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 9</h3>
+            <img src="images/pictures/macro/9.jpg" alt="Macro image 9 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 10</h3>
+            <img src="images/pictures/macro/10.jpg" alt="Macro image 10 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 11</h3>
+            <img src="images/pictures/macro/11.jpg" alt="Macro image 11 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 12</h3>
+            <img src="images/pictures/macro/12.jpg" alt="Macro image 12 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 13</h3>
+            <img src="images/pictures/macro/13.jpg" alt="Macro image 13 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 14</h3>
+            <img src="images/pictures/macro/14.jpg" alt="Macro image 14 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 15</h3>
+            <img src="images/pictures/macro/15.jpg" alt="Macro image 15 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 16</h3>
+            <img src="images/pictures/macro/16.jpg" alt="Macro image 16 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Macro 17</h3>
+            <img src="images/pictures/macro/17.jpg" alt="Macro image 17 - Description TBD. Date: TBD." />
+        </div>
+        </div>
+<h2>Night Time</h2>
+<div class="gallery-grid">
+
+        <div class="gallery-item">
+            <h3>Night Time 1</h3>
+            <img src="images/pictures/night_time/1.jpg" alt="Night Time image 1 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Night Time 2</h3>
+            <img src="images/pictures/night_time/2.jpg" alt="Night Time image 2 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Night Time 3</h3>
+            <img src="images/pictures/night_time/3.jpg" alt="Night Time image 3 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Night Time 4</h3>
+            <img src="images/pictures/night_time/4.jpg" alt="Night Time image 4 - Description TBD. Date: TBD." />
+        </div>
+        </div>
+<h2>Off Campus</h2>
+<div class="gallery-grid">
+
+        <div class="gallery-item">
+            <h3>Off Campus 1</h3>
+            <img src="images/pictures/off_campus/1.jpg" alt="Off Campus image 1 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 2</h3>
+            <img src="images/pictures/off_campus/2.jpg" alt="Off Campus image 2 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 3</h3>
+            <img src="images/pictures/off_campus/3.jpg" alt="Off Campus image 3 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 4</h3>
+            <img src="images/pictures/off_campus/4.jpg" alt="Off Campus image 4 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 5</h3>
+            <img src="images/pictures/off_campus/5.jpg" alt="Off Campus image 5 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 6</h3>
+            <img src="images/pictures/off_campus/6.jpg" alt="Off Campus image 6 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 7</h3>
+            <img src="images/pictures/off_campus/7.jpg" alt="Off Campus image 7 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 8</h3>
+            <img src="images/pictures/off_campus/8.jpg" alt="Off Campus image 8 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 9</h3>
+            <img src="images/pictures/off_campus/9.jpg" alt="Off Campus image 9 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 10</h3>
+            <img src="images/pictures/off_campus/10.jpg" alt="Off Campus image 10 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 11</h3>
+            <img src="images/pictures/off_campus/11.jpg" alt="Off Campus image 11 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 12</h3>
+            <img src="images/pictures/off_campus/12.jpg" alt="Off Campus image 12 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 13</h3>
+            <img src="images/pictures/off_campus/13.jpg" alt="Off Campus image 13 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 14</h3>
+            <img src="images/pictures/off_campus/14.jpg" alt="Off Campus image 14 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 15</h3>
+            <img src="images/pictures/off_campus/15.jpg" alt="Off Campus image 15 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 16</h3>
+            <img src="images/pictures/off_campus/16.jpg" alt="Off Campus image 16 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 17</h3>
+            <img src="images/pictures/off_campus/17.jpg" alt="Off Campus image 17 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Off Campus 18</h3>
+            <img src="images/pictures/off_campus/18.jpg" alt="Off Campus image 18 - Description TBD. Date: TBD." />
+        </div>
+        </div>
+<h2>Portraits</h2>
+<div class="gallery-grid">
+
+        <div class="gallery-item">
+            <h3>Portraits 1</h3>
+            <img src="images/pictures/portraits/1.jpg" alt="Portraits image 1 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 2</h3>
+            <img src="images/pictures/portraits/2.jpg" alt="Portraits image 2 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 3</h3>
+            <img src="images/pictures/portraits/3.jpg" alt="Portraits image 3 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 4</h3>
+            <img src="images/pictures/portraits/4.jpg" alt="Portraits image 4 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 5</h3>
+            <img src="images/pictures/portraits/5.jpg" alt="Portraits image 5 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 6</h3>
+            <img src="images/pictures/portraits/6.jpg" alt="Portraits image 6 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 7</h3>
+            <img src="images/pictures/portraits/7.jpg" alt="Portraits image 7 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 8</h3>
+            <img src="images/pictures/portraits/8.jpg" alt="Portraits image 8 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 9</h3>
+            <img src="images/pictures/portraits/9.jpg" alt="Portraits image 9 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 10</h3>
+            <img src="images/pictures/portraits/10.jpg" alt="Portraits image 10 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 11</h3>
+            <img src="images/pictures/portraits/11.jpg" alt="Portraits image 11 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 12</h3>
+            <img src="images/pictures/portraits/12.jpg" alt="Portraits image 12 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 13</h3>
+            <img src="images/pictures/portraits/13.jpg" alt="Portraits image 13 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 14</h3>
+            <img src="images/pictures/portraits/14.jpg" alt="Portraits image 14 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 15</h3>
+            <img src="images/pictures/portraits/15.jpg" alt="Portraits image 15 - Description TBD. Date: TBD." />
+        </div>
+        
+        <div class="gallery-item">
+            <h3>Portraits 16</h3>
+            <img src="images/pictures/portraits/16.jpg" alt="Portraits image 16 - Description TBD. Date: TBD." />
+        </div>
+        </div>
+
+<!-- Modal -->
+<div id="imageModal" class="modal">
+    <span class="close" onclick="document.getElementById('imageModal').style.display='none'">&times;</span>
+    <img class="modal-content" id="modalImage">
     <div id="caption"></div>
-  </div>
-
-  <script src="js/main.js"></script>
+</div>
+</main>
 </body>
 </html>
