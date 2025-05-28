@@ -1,3 +1,0 @@
-circulating animated visual slideshow of 5 images on the top of the homepage
-add info on about_me
-restructure gallery & projects & favorites
