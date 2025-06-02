@@ -1,2 +1,2 @@
 # asotophotography
-jorge was here
+jorge was here you know where to find me 
